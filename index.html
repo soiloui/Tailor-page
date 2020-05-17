@@ -2,21 +2,68 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your
+				experience.
+			</p>
+		<![endif]-->
+		<div class="menu-btn">
+			<div class="hamburger"></div>
+		</div>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__element">
+					<a href="" class="nav__link"> Strona główna</a>
+				</li>
 
+				<li class="nav__element">
+					<a href="" class="nav__link"> Oferta</a>
+				</li>
 
-    <script src="scripts/main.js" async defer></script>
-  </body>
+				<li class="nav__element">
+					<a href="" class="nav__link">Portfolio</a>
+				</li>
+
+				<li class="nav__element">
+					<a href="" class="nav__link">Kontakt</a>
+				</li>
+
+				<li class="nav__element">
+					<a href="" class="nav__link">O nas</a>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<h1>Twój krawiec <br /><span> wszystko uszyte na miarę</span></h1>
+			<div class="img-wrapper">
+				<img
+					src="./resources/images/tools_2000w.jpg"
+					alt="narzędzia do szycia - nożyczki, nici, metr"
+					srcset="
+						./resources/images/tools_600w.jpg   600w,
+						./resources/images/tools_1000w.jpg 1000w,
+						./resources/images/tools_2000w.jpg 2000w,
+						./resources/images/tools_4000w.jpg 4000w
+					"
+					sizes="100vw"
+					class="bg-img"
+				/>
+			</div>
+		</header>
+
+		<script src="scripts/main.js" async defer></script>
+	</body>
 </html>

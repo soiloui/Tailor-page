@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Josefin+Sans&display=swap');
 //------- RESET ---------
 *,
 *::after,
@@ -5,4 +6,34 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+//----- VARIABLES -------
+$font-prim: 'Cardo', serif;
+$font-sec: 'Josefin Sans', sans-serif;
+$col-prim-dk: #0d1321;
+$col-prim-lt: #2d3047;
+$col-sec-dk: #034748;
+$col-sec-lt: #1b998b;
+$col-acc: #e84855;
+
+//----- INITIAL CONFIGURATION ------
+body {
+	font-family: $font-sec;
+	font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-prim;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
 }

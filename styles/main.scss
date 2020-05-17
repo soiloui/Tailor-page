@@ -1,8 +1,7 @@
 @import 'config';
 @import 'responsive';
 
-//------------------------ LAYOUT
-// _______ Navigation ________
+//------------------------ NAVIGATON ---------------------------
 .nav {
 	position: fixed;
 	top: 0;
@@ -113,16 +112,16 @@
 	background-color: $col-acc;
 }
 
-// ________ HEADER ________
+//------------------------ HEADER ---------------------------
 header {
 	position: relative;
 	padding: 1em;
 	padding-top: 5em;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 h1 {
 	padding: 1em;
@@ -141,6 +140,7 @@ h1 {
 		line-height: 1.3;
 	}
 }
+// _______ Background Image ________
 .img-wrapper {
 	position: absolute;
 	top: 0;
@@ -154,4 +154,104 @@ h1 {
 	height: 100%;
 	object-fit: cover;
 	opacity: 0.6;
+}
+// _______ Make order button ________
+.order-link {
+	position: relative;
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 5em;
+	padding: 1em;
+	color: white;
+	text-transform: uppercase;
+	background-color: $col-acc;
+	border-radius: 5px;
+}
+
+//------------------------ MOVE ARROWS ---------------------------
+.move-wrapper {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 2px;
+		height: 100%;
+		transform-origin: top left;
+		transform: rotate(-35deg);
+		background-color: $col-acc;
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: '';
+		width: 2px;
+		height: 100%;
+		transform-origin: top right;
+		transform: rotate(35deg);
+		background-color: $col-acc;
+	}
+}
+
+//------------------------ SECTIONS ---------------------------
+// _______ General ________
+.section {
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+}
+.section--dark {
+	background-color: $col-prim-dk;
+	color: $col-sec-lt;
+}
+.section--light {
+	color: $col-prim-dk;
+}
+.section__title {
+	padding: 0.5em;
+	font-size: 2.5rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+// _______ Illustrations ________
+.section__illustration {
+	margin-top: 0;
+	max-width: 100vw;
+}
+// _______ Offer ________
+.offer-article {
+	margin-top: 0.8em;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+	border: 1px solid $col-sec-lt;
+}
+.offer-article__title {
+	grid-row: 1;
+	grid-column: 1/3;
+	padding: 0.5em;
+	text-transform: uppercase;
+}
+.offer-article > :nth-child(2) {
+	margin-bottom: 0.1em;
+
+	font-size: 4rem;
+}
+.offer-list {
+	&__item {
+		margin-top: 0.2em;
+	}
 }

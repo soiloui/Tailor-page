@@ -19,8 +19,7 @@
 	}
 	.boxes-wrapper {
 		margin: 0.3em;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-flow: row wrap;
 		justify-content: space-between;
 		align-items: stretch;
 
@@ -28,13 +27,6 @@
 			flex-grow: 1;
 			margin: 0.7em;
 			width: 40%;
-		}
-
-		.offer-article--priority .material-icons {
-			margin-top: 20px;
-		}
-		.offer-list--priority {
-			margin-top: 6px;
 		}
 	}
 }
@@ -54,6 +46,9 @@
 	}
 	.offer-article--map {
 		width: 70%;
+	}
+	.offer-article__title {
+		height: 6em;
 	}
 }
 

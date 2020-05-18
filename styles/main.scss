@@ -273,8 +273,16 @@ h1 {
 }
 .offer-article__title {
 	padding: 0.5em;
+	height: 4em;
+	display: flex;
+	align-items: center;
 	text-transform: uppercase;
+
+	&--contact {
+		height: auto;
+	}
 }
+
 .offer-article .material-icons {
 	margin-bottom: 0.2em;
 	font-size: 4rem;

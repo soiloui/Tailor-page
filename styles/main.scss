@@ -15,28 +15,26 @@
 	background-color: rgba($col-prim-dk, 0.9);
 
 	&--active {
-		transform: translateX(0%);
+		transform: translateX(0);
 	}
 }
 .nav__list {
-	margin-top: 1.5em;
-	padding: 1em;
-	padding-left: 0.4em;
+	margin-top: 3em;
+	padding-left: 0;
 	display: flex;
 	flex-direction: column;
 }
-.nav__element {
-	padding: 0.6em;
-}
+
 .nav__link {
 	display: block;
 	position: relative;
-	padding: inherit;
+	padding: 0.8em;
 	overflow: hidden;
 	transition: 0.25s all ease-out;
 
 	color: $col-sec-lt;
 	background-color: $col-prim-lt;
+	border-bottom: 1px solid $col-prim-dk;
 
 	&::before {
 		content: '';
@@ -45,13 +43,15 @@
 		top: 0;
 		height: 100%;
 		width: 5px;
+		transition: 0.25s all ease-out;
 
-		background-color: $col-acc;
+		background-color: $col-sec-lt;
 	}
 }
 .nav__link:hover {
 	&::before {
 		z-index: 2;
+		background-color: $col-acc;
 	}
 	color: $col-acc;
 }
@@ -155,27 +155,35 @@ h1 {
 	object-fit: cover;
 	opacity: 0.6;
 }
-// _______ Make order button ________
-.order-link {
+
+//------------------------ COMPONENTS ---------------------------
+// _______ Primary button ________
+.button-primary {
 	position: relative;
 	display: block;
-	margin-top: 1.5em;
-	margin-bottom: 5em;
+	margin: 0.5em 0;
 	padding: 1em;
 	color: white;
+	text-align: center;
 	text-transform: uppercase;
 	background-color: $col-acc;
 	border-radius: 5px;
 }
+header .button-primary {
+	margin-top: 2em;
+}
 
-//------------------------ MOVE ARROWS ---------------------------
+// _______ Move arrows ________
 .move-wrapper {
-	position: absolute;
-	bottom: 0;
-	margin-bottom: 1.5em;
-	margin-top: 1.5em;
+	position: sticky;
+	left: 50%;
+	bottom: 15px;
+	margin: 1.7em 0;
+	margin-bottom: 0.6em;
 	width: 30px;
 	height: 25px;
+
+	transform: translateX(-50%);
 	cursor: pointer;
 
 	&::before {
@@ -204,22 +212,26 @@ h1 {
 }
 
 //------------------------ SECTIONS ---------------------------
-// _______ General ________
+// _______--------- General ---------________
 .section {
+	position: relative;
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
-}
-.section--dark {
-	background-color: $col-prim-dk;
-	color: $col-sec-lt;
-}
-.section--light {
-	color: $col-prim-dk;
+
+	&--dark {
+		background-color: $col-prim-dk;
+		color: $col-sec-lt;
+	}
+	&--light {
+		color: $col-prim-dk;
+	}
 }
 .section__title {
 	padding: 0.5em;
+
 	font-size: 2.5rem;
+	font-family: $font-sec;
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -228,7 +240,8 @@ h1 {
 	margin-top: 0;
 	max-width: 100vw;
 }
-// _______ Offer ________
+
+// _______--------- Offer ---------________
 .offer-article {
 	margin-top: 0.8em;
 	padding: 1em;
@@ -240,18 +253,51 @@ h1 {
 	border: 1px solid $col-sec-lt;
 }
 .offer-article__title {
-	grid-row: 1;
-	grid-column: 1/3;
 	padding: 0.5em;
 	text-transform: uppercase;
 }
-.offer-article > :nth-child(2) {
-	margin-bottom: 0.1em;
-
+.offer-article .material-icons {
+	margin-bottom: 0.2em;
 	font-size: 4rem;
 }
 .offer-list {
-	&__item {
-		margin-top: 0.2em;
+	&--priority {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		& > :nth-child(n) {
+			width: 50%;
+			text-transform: uppercase;
+
+			span {
+				text-transform: lowercase;
+			}
+		}
 	}
+}
+.offer-list__item {
+	margin-top: 0.2em;
+
+	&--express {
+		color: $col-acc;
+	}
+}
+
+// _______--------- Portfolio ---------________
+.portfolio-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.portfolio-item {
+	margin-bottom: 2em;
+	height: 400px;
+	cursor: pointer;
+	border: 3px solid $col-acc;
+}
+.portfolio-item__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
 }

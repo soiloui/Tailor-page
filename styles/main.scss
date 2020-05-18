@@ -146,6 +146,7 @@ header .move-wrapper {
 
 	&--active {
 		.hamburger {
+			box-shadow: none;
 			background-color: rgba(#000000, 0);
 		}
 		&::before {
@@ -158,37 +159,29 @@ header .move-wrapper {
 		}
 	}
 }
-.hamburger {
+.hamburger,
+.menu-btn::before,
+.menu-btn::after {
 	position: absolute;
-	top: 50%;
-	height: 2px;
+	height: 3px;
 	width: inherit;
-	transform: translateY(-50%);
 	transition: inherit;
+	transform-origin: right;
 
 	background-color: $col-acc;
+}
+.hamburger {
+	top: 50%;
+	transform: translateY(-50%);
+	transition-duration: 0.2s;
 }
 .menu-btn::before {
 	content: '';
-	position: absolute;
 	top: 0;
-	width: inherit;
-	height: 2px;
-	transition: inherit;
-	transform-origin: right;
-
-	background-color: $col-acc;
 }
 .menu-btn::after {
 	content: '';
-	position: absolute;
 	bottom: 0;
-	width: inherit;
-	height: 2px;
-	transition: inherit;
-	transform-origin: right;
-
-	background-color: $col-acc;
 }
 
 //------------------------ HEADER ---------------------------

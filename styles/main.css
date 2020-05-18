@@ -198,6 +198,8 @@ header .move-wrapper {
 }
 
 .menu-btn--active .hamburger {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -213,42 +215,35 @@ header .move-wrapper {
           transform: rotate(45deg);
 }
 
-.hamburger {
+.hamburger,
+.menu-btn::before,
+.menu-btn::after {
   position: absolute;
-  top: 50%;
-  height: 2px;
+  height: 3px;
   width: inherit;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   -webkit-transition: inherit;
   transition: inherit;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   background-color: #e84855;
+}
+
+.hamburger {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .menu-btn::before {
   content: '';
-  position: absolute;
   top: 0;
-  width: inherit;
-  height: 2px;
-  -webkit-transition: inherit;
-  transition: inherit;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  background-color: #e84855;
 }
 
 .menu-btn::after {
   content: '';
-  position: absolute;
   bottom: 0;
-  width: inherit;
-  height: 2px;
-  -webkit-transition: inherit;
-  transition: inherit;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  background-color: #e84855;
 }
 
 header {

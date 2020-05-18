@@ -2,23 +2,20 @@
 	html {
 		font-size: 13px;
 	}
-	.portfolio-item__img {
-		object-fit: cover;
-	}
 }
 
 @media (min-width: 300px) {
 	html {
 		font-size: 16px;
 	}
-	.portfolio-item__img {
-		object-fit: scale-down;
-	}
 }
 
 @media (min-width: 700px) {
 	html {
 		font-size: 19px;
+	}
+	h1 {
+		font-size: 5rem;
 	}
 	.boxes-wrapper {
 		margin: 0.3em;
@@ -29,8 +26,8 @@
 
 		& > :nth-child(n) {
 			flex-grow: 1;
-			margin: 0.3em;
-			width: 48%;
+			margin: 0.7em;
+			width: 40%;
 		}
 
 		.offer-article--priority .material-icons {
@@ -51,8 +48,26 @@
 		& > :nth-child(n) {
 			width: 30%;
 		}
+		.portfolio-item {
+			width: 40%;
+		}
 	}
 	.offer-article--map {
 		width: 70%;
+	}
+}
+
+@media (min-width: 1900px) {
+	.boxes-wrapper {
+		& > :nth-child(n) {
+			width: 20%;
+		}
+		.portfolio-item {
+			width: 40%;
+		}
+	}
+
+	footer {
+		height: 70px;
 	}
 }

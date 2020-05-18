@@ -46,6 +46,7 @@ ul {
 }
 
 .boxes-wrapper > :nth-child(n) {
+  margin-top: 2em;
   width: 100%;
 }
 
@@ -121,6 +122,7 @@ header .move-wrapper {
   top: 0;
   right: 0;
   width: 70%;
+  max-width: 400px;
   height: 100vh;
   z-index: 2;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
@@ -138,7 +140,7 @@ header .move-wrapper {
 }
 
 .nav__list {
-  margin-top: 3em;
+  margin-top: 4em;
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,62 +186,68 @@ header .move-wrapper {
 
 .menu-btn {
   position: fixed;
-  top: 10px;
+  top: 0;
   right: 0;
-  margin-right: 1.5em;
-  width: 22px;
-  height: 25px;
+  margin: 1.5em;
+  width: 1.6em;
+  height: 1.25em;
   z-index: 3;
   cursor: pointer;
+  -webkit-transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .menu-btn--active .hamburger {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.menu-btn--active .hamburger::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.menu-btn--active .hamburger::after {
-  top: 0;
+.menu-btn--active::before {
+  bottom: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.menu-btn--active::after {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .hamburger {
   position: absolute;
   top: 50%;
   height: 2px;
-  width: 100%;
+  width: inherit;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  background-color: #e84855;
-}
-
-.hamburger::before {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  width: inherit;
-  height: inherit;
   -webkit-transition: inherit;
   transition: inherit;
   background-color: #e84855;
 }
 
-.hamburger::after {
+.menu-btn::before {
   content: '';
   position: absolute;
-  bottom: -7px;
+  top: 0;
   width: inherit;
-  height: inherit;
+  height: 2px;
   -webkit-transition: inherit;
   transition: inherit;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  background-color: #e84855;
+}
+
+.menu-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 2px;
+  -webkit-transition: inherit;
+  transition: inherit;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   background-color: #e84855;
 }
 
@@ -302,6 +310,7 @@ h1 span {
 .section {
   position: relative;
   padding: 1em;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +333,7 @@ h1 span {
 }
 
 .section__title {
-  padding: 0.5em;
+  padding: 0.8em;
   font-size: 2.5rem;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -332,13 +341,12 @@ h1 span {
 }
 
 .section__illustration {
-  margin-top: 0;
+  margin-bottom: 1em;
   max-width: 90vw;
   max-height: 50vh;
 }
 
 .offer-article {
-  margin-top: 0.8em;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,25 +403,50 @@ h1 span {
 }
 
 .portfolio-item {
-  margin-bottom: 2em;
-  height: 400px;
+  position: relative;
+  width: 40%;
   cursor: pointer;
-  border: 3px solid #e84855;
+  border: 4px solid #e84855;
+  border-radius: 5px;
 }
 
-.portfolio-item:nth-last-child(1) {
-  margin-bottom: 0;
+.portfolio-item::before {
+  content: '';
+  background-image: url("../resources/images/woman_wonder_600w.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.portfolio-item::after {
+  content: '';
+  background-color: rgba(13, 19, 33, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .portfolio-item__img {
   width: 100%;
   height: 100%;
+  max-height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  background-color: rgba(232, 72, 85, 0.3);
 }
 
 .offer-article--map {
+  margin-top: 2em;
   width: 100%;
 }
 
@@ -423,11 +456,11 @@ h1 span {
 }
 
 .about-text {
-  margin-bottom: 1em;
   padding: 1em;
   color: #fff;
   text-align: justify;
   background-color: rgba(232, 72, 85, 0.8);
+  border-radius: 5px;
 }
 
 footer {
@@ -450,25 +483,20 @@ footer {
   html {
     font-size: 13px;
   }
-  .portfolio-item__img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
 }
 
 @media (min-width: 300px) {
   html {
     font-size: 16px;
   }
-  .portfolio-item__img {
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-  }
 }
 
 @media (min-width: 700px) {
   html {
     font-size: 19px;
+  }
+  h1 {
+    font-size: 5rem;
   }
   .boxes-wrapper {
     margin: 0.3em;
@@ -489,8 +517,8 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    margin: 0.3em;
-    width: 48%;
+    margin: 0.7em;
+    width: 40%;
   }
   .boxes-wrapper .offer-article--priority .material-icons {
     margin-top: 20px;
@@ -510,7 +538,22 @@ footer {
   .boxes-wrapper > :nth-child(n) {
     width: 30%;
   }
+  .boxes-wrapper .portfolio-item {
+    width: 40%;
+  }
   .offer-article--map {
     width: 70%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .boxes-wrapper > :nth-child(n) {
+    width: 20%;
+  }
+  .boxes-wrapper .portfolio-item {
+    width: 40%;
+  }
+  footer {
+    height: 70px;
   }
 }

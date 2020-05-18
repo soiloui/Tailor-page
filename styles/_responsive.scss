@@ -21,17 +21,16 @@
 		font-size: 19px;
 	}
 	.boxes-wrapper {
+		margin: 0.3em;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: stretch;
 
 		& > :nth-child(n) {
+			flex-grow: 1;
+			margin: 0.3em;
 			width: 48%;
-		}
-
-		& :nth-last-child(1):nth-child(odd) {
-			width: 100%;
 		}
 
 		.offer-article--priority .material-icons {
@@ -40,5 +39,20 @@
 		.offer-list--priority {
 			margin-top: 6px;
 		}
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 22px;
+	}
+	.boxes-wrapper {
+		width: 70%;
+		& > :nth-child(n) {
+			width: 30%;
+		}
+	}
+	.offer-article--map {
+		width: 70%;
 	}
 }

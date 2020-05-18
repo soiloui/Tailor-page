@@ -3,6 +3,7 @@
 //------------------------ COMPONENTS ---------------------------
 // _______ Boxes Wrapper ________
 .boxes-wrapper {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -257,6 +258,7 @@ h1 {
 .section__illustration {
 	margin-top: 0;
 	max-width: 90vw;
+	max-height: 50vh;
 }
 
 // _______--------- Offer ---------________
@@ -323,6 +325,9 @@ h1 {
 }
 
 // _______--------- Kontakt ---------________
+.offer-article--map {
+	width: 100%;
+}
 .google-map {
 	width: 100%;
 	height: 300px;
@@ -334,6 +339,7 @@ h1 {
 	padding: 1em;
 
 	color: #fff;
+	text-align: justify;
 	background-color: rgba($col-acc, 0.8);
 }
 

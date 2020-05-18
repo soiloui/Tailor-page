@@ -32,6 +32,7 @@ ul {
 }
 
 .boxes-wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,6 +334,7 @@ h1 span {
 .section__illustration {
   margin-top: 0;
   max-width: 90vw;
+  max-height: 50vh;
 }
 
 .offer-article {
@@ -411,6 +413,10 @@ h1 span {
   background-color: rgba(232, 72, 85, 0.3);
 }
 
+.offer-article--map {
+  width: 100%;
+}
+
 .google-map {
   width: 100%;
   height: 300px;
@@ -420,6 +426,7 @@ h1 span {
   margin-bottom: 1em;
   padding: 1em;
   color: #fff;
+  text-align: justify;
   background-color: rgba(232, 72, 85, 0.8);
 }
 
@@ -464,6 +471,7 @@ footer {
     font-size: 19px;
   }
   .boxes-wrapper {
+    margin: 0.3em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -478,15 +486,31 @@ footer {
             align-items: stretch;
   }
   .boxes-wrapper > :nth-child(n) {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 0.3em;
     width: 48%;
-  }
-  .boxes-wrapper :nth-last-child(1):nth-child(odd) {
-    width: 100%;
   }
   .boxes-wrapper .offer-article--priority .material-icons {
     margin-top: 20px;
   }
   .boxes-wrapper .offer-list--priority {
     margin-top: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+  .boxes-wrapper {
+    width: 70%;
+  }
+  .boxes-wrapper > :nth-child(n) {
+    width: 30%;
+  }
+  .offer-article--map {
+    width: 70%;
   }
 }

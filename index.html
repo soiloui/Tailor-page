@@ -21,6 +21,8 @@
 				experience.
 			</p>
 		<![endif]-->
+
+		<!-- -------------------------- NAWIGACJA------------------------- -->
 		<div class="menu-btn">
 			<div class="hamburger"></div>
 		</div>
@@ -47,6 +49,8 @@
 				</li>
 			</ul>
 		</nav>
+
+		<!-- -------------------------- HEADER ------------------------- -->
 		<header>
 			<h1>Twój krawiec <br /><span> wszystko uszyte na miarę</span></h1>
 			<div class="img-wrapper">
@@ -68,6 +72,7 @@
 		</header>
 
 		<main>
+			<!-- -------------------------- SEKCJA OFERTA ------------------------- -->
 			<section class="section section--dark">
 				<h2 class="section__title">oferta</h2>
 				<img
@@ -76,65 +81,69 @@
 					class="section__illustration"
 				/>
 
-				<article class="offer-article">
-					<h3 class="offer-article__title">szycie miarowe odzieży damskiej</h3>
-					<span class="material-icons">
-						check_circle
-					</span>
-					<ul class="offer-list">
-						<li class="offer-list__item">bluzki</li>
-						<li class="offer-list__item">suknie</li>
-						<li class="offer-list__item">spodnie</li>
-						<li class="offer-list__item">tuniki</li>
-						<li class="offer-list__item">żakiety</li>
-					</ul>
-				</article>
-				<article class="offer-article">
-					<h3 class="offer-article__title">szycie miarowe odzieży męskiej</h3>
-					<span class="material-icons">
-						check_circle
-					</span>
-					<ul class="offer-list">
-						<li class="offer-list__item">garnitury</li>
-						<li class="offer-list__item">koszule</li>
-						<li class="offer-list__item">spodnie</li>
-					</ul>
-				</article>
-				<article class="offer-article">
-					<h3 class="offer-article__title">​​poprawki krawieckie</h3>
-					<span class="material-icons">
-						check_circle
-					</span>
-					<ul class="offer-list">
-						<li class="offer-list__item">skracanie/wydłużanie</li>
-						<li class="offer-list__item">zwężanie/poszerzanie</li>
-						<li class="offer-list__item">przeszywanie</li>
-						<li class="offer-list__item">naprawa odzieży</li>
-						<li class="offer-list__item">wymiana zamków</li>
-					</ul>
-				</article>
+				<div class="boxes-wrapper">
+					<article class="offer-article">
+						<h3 class="offer-article__title">szycie miarowe odzieży damskiej</h3>
+						<span class="material-icons">
+							check_circle
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">bluzki</li>
+							<li class="offer-list__item">suknie</li>
+							<li class="offer-list__item">spodnie</li>
+							<li class="offer-list__item">tuniki</li>
+							<li class="offer-list__item">żakiety</li>
+						</ul>
+					</article>
+					<article class="offer-article">
+						<h3 class="offer-article__title">szycie miarowe odzieży męskiej</h3>
+						<span class="material-icons">
+							check_circle
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">garnitury</li>
+							<li class="offer-list__item">koszule</li>
+							<li class="offer-list__item">spodnie</li>
+						</ul>
+					</article>
+					<article class="offer-article">
+						<h3 class="offer-article__title">​​poprawki krawieckie</h3>
+						<span class="material-icons">
+							check_circle
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">skracanie/wydłużanie</li>
+							<li class="offer-list__item">zwężanie/poszerzanie</li>
+							<li class="offer-list__item">przeszywanie</li>
+							<li class="offer-list__item">naprawa odzieży</li>
+							<li class="offer-list__item">wymiana zamków</li>
+						</ul>
+					</article>
 
-				<article class="offer-article">
-					<h3 class="offer-article__title">​​wybór priorytetu</h3>
-					<span class="material-icons">
-						hourglass_full
-					</span>
-					<ul class="offer-list offer-list--priority">
-						<li class="offer-list__item">
-							standard <span><br />do 7 dni</span>
-						</li>
-						<li class="offer-list__item offer-list__item--express">
-							ekspres <span><br />do 2 dni</span>
-						</li>
-					</ul>
-				</article>
+					<article class="offer-article offer-article--priority">
+						<h3 class="offer-article__title">​​wybór priorytetu</h3>
+						<span class="material-icons">
+							hourglass_full
+						</span>
+						<ul class="offer-list offer-list--priority">
+							<li class="offer-list__item">
+								standard <span><br />do 7 dni</span>
+							</li>
+							<li class="offer-list__item offer-list__item--express">
+								ekspres <span><br />do 2 dni</span>
+							</li>
+						</ul>
+					</article>
+				</div>
 
+				<a href="" class="button-primary">cennik</a>
 				<div class="move-wrapper"></div>
 			</section>
 
+			<!-- -------------------------- SEKCJA PORTFOLIO ------------------------- -->
 			<section class="section section--light">
 				<h2 class="section__title">portfolio</h2>
-				<div class="portfolio-wrapper">
+				<div class="boxes-wrapper">
 					<div class="portfolio-item">
 						<img
 							src="./resources/images/gallery/woman_1_2000w.jpg"
@@ -176,12 +185,115 @@
 							class="portfolio-item__img"
 						/>
 					</div>
+					<div class="portfolio-item">
+						<img
+							src="./resources/images/gallery/men_2_2000w.jpg"
+							alt="Mężczyzna siedzący w kremoweym płaszczu"
+							srcset="
+								./resources/images/gallery/men_2_600w.jpg   600w,
+								./resources/images/gallery/men_2_1000w.jpg 1000w,
+								./resources/images/gallery/men_2_2000w.jpg 2000w,
+								./resources/images/gallery/men_2_3900w.jpg 3900w
+							"
+							sizes="(max-width: 800px) 98vw"
+							class="portfolio-item__img"
+						/>
+					</div>
 				</div>
 
 				<a href="" class="button-primary">zobacz więcej</a>
 				<div class="move-wrapper"></div>
 			</section>
+
+			<!-- -------------------------- SEKCJA KONTAKT ------------------------- -->
+			<section class="section section--dark">
+				<h2 class="section__title">kontakt</h2>
+				<img
+					src="./resources/illustrations/posters_shopping.svg"
+					alt="ilustracja człowieka oglądającego witrynę sklepu odzieżowego"
+					class="section__illustration"
+				/>
+
+				<div class="boxes-wrapper">
+					<article class="offer-article">
+						<h3 class="offer-article__title">zadzwoń</h3>
+						<span class="material-icons">
+							call
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">+48 034 304 034</li>
+						</ul>
+					</article>
+
+					<article class="offer-article">
+						<h3 class="offer-article__title">napisz</h3>
+						<span class="material-icons">
+							email
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">twojkrawiec@gmail.com</li>
+						</ul>
+					</article>
+
+					<article class="offer-article">
+						<h3 class="offer-article__title">przyjedź</h3>
+						<span class="material-icons">
+							location_on
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.4566816893857!2d14.556468591876232!3d53.42454234638755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090e51ad568d%3A0xd1ba4155a6db895f!2sZamek%20Ksi%C4%85%C5%BC%C4%85t%20Pomorskich%20w%20Szczecinie!5e0!3m2!1sen!2spl!4v1589805547779!5m2!1sen!2spl"
+									frameborder="0"
+									allowfullscreen=""
+									aria-hidden="false"
+									tabindex="0"
+									class="google-map"
+								></iframe>
+							</li>
+						</ul>
+					</article>
+				</div>
+
+				<div class="move-wrapper"></div>
+			</section>
+
+			<!-- -------------------------- SEKCJA O NAS ------------------------- -->
+			<section class="section section--light">
+				<h2 class="section__title">o nas</h2>
+				<div class="img-wrapper">
+					<img
+						src="./resources/images/flat_2000w.jpg"
+						alt="narzędzia do szycia - nożyczki, nici, metr"
+						srcset="
+							./resources/images/flat_600w.jpg   600w,
+							./resources/images/flat_1000w.jpg 1000w,
+							./resources/images/flat_2000w.jpg 2000w,
+							./resources/images/flat_4000w.jpg 4000w
+						"
+						sizes="100vw"
+						class="bg-img"
+					/>
+				</div>
+
+				<p class="about-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique, magnam minima veniam hic eligendi,
+					eveniet rerum quos harum eius eum cum quia culpa, obcaecati maiores. Nihil quas quaerat nulla illo veritatis
+					in tenetur, reprehenderit facilis doloribus reiciendis inventore minus? Inventore maxime corrupti quis sequi,
+					obcaecati necessitatibus illum laudantium reiciendis!
+				</p>
+
+				<p class="about-text">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum laboriosam officia architecto
+					quidem dicta vel praesentium vitae laborum, molestias commodi quasi ea tempora cum repellat! Dolores facilis
+					facere recusandae minus possimus enim, repudiandae, ex, architecto rerum laboriosam quas cum.
+				</p>
+			</section>
 		</main>
+
+		<footer>
+			<p>Mieczysław Palian 2020</p>
+		</footer>
 
 		<script src="scripts/main.js" async defer></script>
 	</body>

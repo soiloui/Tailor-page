@@ -91,8 +91,8 @@ loadContentGallery = () => {
 			if (i == 1) womenElement.classList.add('gallery__item--active');
 			const womenPhoto = document.createElement('img');
 			womenPhoto.classList.add('gallery__image');
-			womenPhoto.dataset.src = `.././resources/images/gallery/woman_${i}_1000w.jpg`;
-			womenPhoto.dataset.srcset = `.././resources/images/gallery/woman_${i}_500w.jpg 500w, .././resources/images/gallery/woman_${i}_1000w.jpg 1000w, .././resources/images/gallery/woman_${i}_2000w.jpg 2000w`;
+			womenPhoto.dataset.src = `./resources/images/gallery/woman_${i}_1000w.jpg`;
+			womenPhoto.dataset.srcset = `./resources/images/gallery/woman_${i}_600w.jpg 600w, ./resources/images/gallery/woman_${i}_1000w.jpg 1000w, ./resources/images/gallery/woman_${i}_2000w.jpg 2000w`;
 			womenPhoto.sizes = '80vw';
 			womenPhoto.alt = `women model ${i}`;
 			womenElement.appendChild(womenPhoto);
@@ -104,8 +104,8 @@ loadContentGallery = () => {
 			menElement.classList.add('gallery__item');
 			const menPhoto = document.createElement('img');
 			menPhoto.classList.add('gallery__image');
-			menPhoto.dataset.src = `.././resources/images/gallery/men_${i}_1000w.jpg`;
-			menPhoto.dataset.srcset = `.././resources/images/gallery/men_${i}_500w.jpg 500w, .././resources/images/gallery/men_${i}_1000w.jpg 1000w, .././resources/images/gallery/men_${i}_2000w.jpg 2000w`;
+			menPhoto.dataset.src = `./resources/images/gallery/men_${i}_1000w.jpg`;
+			menPhoto.dataset.srcset = `./resources/images/gallery/men_${i}_600w.jpg 600w, ./resources/images/gallery/men_${i}_1000w.jpg 1000w, ./resources/images/gallery/men_${i}_2000w.jpg 2000w`;
 			menPhoto.sizes = '80vw';
 			menPhoto.alt = `men model ${i}`;
 			menElement.appendChild(menPhoto);

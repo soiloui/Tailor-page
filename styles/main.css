@@ -508,20 +508,6 @@ tbody > :nth-child(1) td {
   border-radius: 5px;
 }
 
-.portfolio-item::before {
-  content: '';
-  background-image: url("../resources/images/woman_wonder_600w.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -2;
-}
-
 .portfolio-item::after {
   content: '';
   background-color: rgba(13, 19, 33, 0.8);
@@ -676,8 +662,8 @@ footer {
   width: auto;
   max-width: 80vw;
   max-height: 80vh;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 300px) {

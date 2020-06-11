@@ -91,6 +91,7 @@ loadContentGallery = () => {
 			if (i == 1) womenElement.classList.add('gallery__item--active');
 			const womenPhoto = document.createElement('img');
 			womenPhoto.classList.add('gallery__image');
+			womenPhoto.src = './resources/images/gallery/0_thumbnail.svg';
 			womenPhoto.dataset.src = `./resources/images/gallery/woman_${i}_1000w.jpg`;
 			womenPhoto.dataset.srcset = `./resources/images/gallery/woman_${i}_600w.jpg 600w, ./resources/images/gallery/woman_${i}_1000w.jpg 1000w, ./resources/images/gallery/woman_${i}_2000w.jpg 2000w`;
 			womenPhoto.sizes = '80vw';
@@ -104,6 +105,7 @@ loadContentGallery = () => {
 			menElement.classList.add('gallery__item');
 			const menPhoto = document.createElement('img');
 			menPhoto.classList.add('gallery__image');
+			menPhoto.src = './resources/images/gallery/0_thumbnail.svg';
 			menPhoto.dataset.src = `./resources/images/gallery/men_${i}_1000w.jpg`;
 			menPhoto.dataset.srcset = `./resources/images/gallery/men_${i}_600w.jpg 600w, ./resources/images/gallery/men_${i}_1000w.jpg 1000w, ./resources/images/gallery/men_${i}_2000w.jpg 2000w`;
 			menPhoto.sizes = '80vw';
@@ -184,6 +186,11 @@ galleryActivation = () => {
 		if (!acutalImage.hasAttribute('src')) {
 			acutalImage.src = acutalImage.dataset.src;
 			acutalImage.srcset = acutalImage.dataset.srcset;
+		} else {
+			if (acutalImage.getAttribute('src') != acutalImage.getAttribute('data-src')) {
+				acutalImage.src = acutalImage.dataset.src;
+				acutalImage.srcset = acutalImage.dataset.srcset;
+			}
 		}
 	};
 

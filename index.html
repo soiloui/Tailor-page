@@ -3,16 +3,20 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="pl">
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
-		<meta name="description" content="" />
+		<title>Twój Krawiec</title>
+		<meta name="description" content="strona reprezentująca firmę krawiecką oraz jej ofertę" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./resources/favico/" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./resources/favico/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./resources/favico/favicon-16x16.png" />
+		<link rel="manifest" href="./resources/favico/site.webmanifest" />
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -29,23 +33,23 @@
 		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__element">
-					<a href="#" data-name="header" class="nav__link"> Strona główna</a>
+					<a href="#header" class="nav__link smooth-scroll"> Strona główna</a>
 				</li>
 
 				<li class="nav__element">
-					<a href="#" data-name="offer" class="nav__link"> Oferta</a>
+					<a href="#offer" class="nav__link smooth-scroll"> Oferta</a>
 				</li>
 
 				<li class="nav__element">
-					<a href="#" data-name="portfolio" class="nav__link">Portfolio</a>
+					<a href="#portfolio" class="nav__link smooth-scroll">Portfolio</a>
 				</li>
 
 				<li class="nav__element">
-					<a href="#" data-name="contact" class="nav__link">Kontakt</a>
+					<a href="#contact" class="nav__link smooth-scroll">Kontakt</a>
 				</li>
 
 				<li class="nav__element">
-					<a href="#" data-name="about" class="nav__link">O nas</a>
+					<a href="#about" class="nav__link smooth-scroll">O nas</a>
 				</li>
 			</ul>
 		</nav>
@@ -67,8 +71,8 @@
 					class="bg-img"
 				/>
 			</div>
-			<a href="" class="button-primary">złóż zamówienie</a>
-			<a href="#offer" class="move-wrapper"></a>
+			<a href="#contact" class="button-primary smooth-scroll">złóż zamówienie</a>
+			<a href="#offer" class="move-wrapper smooth-scroll"></a>
 		</header>
 
 		<main>
@@ -136,8 +140,112 @@
 					</article>
 				</div>
 
-				<a href="" class="button-primary">cennik</a>
-				<a href="#" class="move-wrapper"></a>
+				<p class="button-primary pricing-button">cennik</p>
+
+				<section class="section section--dark pricing" id="pricing">
+					<h2 class="section__title">cennik</h2>
+					<div class="boxes-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="10" class="table-title">szycie miarowe odzieży damskiej</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>-</td>
+									<td>S</td>
+									<td>M</td>
+									<td>L</td>
+									<td>XL</td>
+								</tr>
+
+								<tr>
+									<td>Bluzki</td>
+									<td>20 - 30zł</td>
+									<td>30 - 60zł</td>
+									<td>50 - 90zł</td>
+									<td>80 - 150zł</td>
+								</tr>
+
+								<tr>
+									<td>Suknie</td>
+									<td>20 - 30zł</td>
+									<td>30 - 60zł</td>
+									<td>50 - 90zł</td>
+									<td>80 - 150zł</td>
+								</tr>
+
+								<tr>
+									<td>Spodnie</td>
+									<td>20 - 30zł</td>
+									<td>30 - 60zł</td>
+									<td>50 - 90zł</td>
+									<td>80 - 150zł</td>
+								</tr>
+
+								<tr>
+									<td>Tuniki</td>
+									<td>20 - 30zł</td>
+									<td>30 - 60zł</td>
+									<td>50 - 90zł</td>
+									<td>80 - 150zł</td>
+								</tr>
+
+								<tr>
+									<td>żakiety</td>
+									<td>20 - 30zł</td>
+									<td>30 - 60zł</td>
+									<td>50 - 90zł</td>
+									<td>80 - 150zł</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table>
+							<thead>
+								<tr>
+									<th colspan="10" class="table-title">szycie miarowe odzieży męskiej</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>-</td>
+									<td>S</td>
+									<td>M</td>
+									<td>L</td>
+									<td>XL</td>
+								</tr>
+
+								<tr>
+									<td>garnitury</td>
+									<td>70 - 150zł</td>
+									<td>100 - 350zł</td>
+									<td>150 - 450zł</td>
+									<td>200 - 600zł</td>
+								</tr>
+
+								<tr>
+									<td>koszule</td>
+									<td>20 - 90zł</td>
+									<td>30 - 100zł</td>
+									<td>40 - 150zł</td>
+									<td>50 - 190zł</td>
+								</tr>
+
+								<tr>
+									<td>spodnie</td>
+									<td>20 - 40zł</td>
+									<td>30 - 80zł</td>
+									<td>50 - 130zł</td>
+									<td>80 - 170zł</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<a href="#portfolio" class="move-wrapper smooth-scroll"></a>
 			</section>
 
 			<!-- -------------------------- SEKCJA PORTFOLIO ------------------------- -->
@@ -151,10 +259,9 @@
 							srcset="
 								./resources/images/gallery/woman_1_600w.jpg   600w,
 								./resources/images/gallery/woman_1_1000w.jpg 1000w,
-								./resources/images/gallery/woman_1_2000w.jpg 2000w,
-								./resources/images/gallery/woman_1_4000w.jpg 4000w
+								./resources/images/gallery/woman_1_2000w.jpg 2000w
 							"
-							sizes="(max-width: 800px) 98vw"
+							sizes="(max-width: 800px) 98vw, 45vw"
 							class="portfolio-item__img"
 						/>
 					</div>
@@ -167,7 +274,7 @@
 								./resources/images/gallery/men_1_1000w.jpg 1000w,
 								./resources/images/gallery/men_1_1700w.jpg 1700w
 							"
-							sizes="(max-width: 800px) 98vw"
+							sizes="(max-width: 800px) 98vw, 45vw"
 							class="portfolio-item__img"
 						/>
 					</div>
@@ -178,10 +285,9 @@
 							srcset="
 								./resources/images/gallery/woman_2_600w.jpg   600w,
 								./resources/images/gallery/woman_2_1000w.jpg 1000w,
-								./resources/images/gallery/woman_2_2000w.jpg 2000w,
-								./resources/images/gallery/woman_2_3800w.jpg 3800w
+								./resources/images/gallery/woman_2_2000w.jpg 2000w
 							"
-							sizes="(max-width: 800px) 98vw"
+							sizes="(max-width: 800px) 98vw, 45vw"
 							class="portfolio-item__img"
 						/>
 					</div>
@@ -192,17 +298,33 @@
 							srcset="
 								./resources/images/gallery/men_2_600w.jpg   600w,
 								./resources/images/gallery/men_2_1000w.jpg 1000w,
-								./resources/images/gallery/men_2_2000w.jpg 2000w,
-								./resources/images/gallery/men_2_3900w.jpg 3900w
+								./resources/images/gallery/men_2_2000w.jpg 2000w
 							"
-							sizes="(max-width: 800px) 98vw"
+							sizes="(max-width: 800px) 98vw, 45vw"
 							class="portfolio-item__img"
 						/>
 					</div>
 				</div>
 
-				<a href="" class="button-primary">zobacz więcej</a>
-				<a href="#contact" class="move-wrapper"></a>
+				<p class="button-primary gallery-button">zobacz więcej</p>
+
+				<!-- ------------------ GALLERY ----------------------- -->
+
+				<div class="gallery">
+					<div class="gallery__content">
+						<span class="material-icons close">
+							close
+						</span>
+						<span class="material-icons left">
+							arrow_left
+						</span>
+						<span class="material-icons right">
+							arrow_right
+						</span>
+					</div>
+				</div>
+
+				<a href="#contact" class="move-wrapper smooth-scroll"></a>
 			</section>
 
 			<!-- -------------------------- SEKCJA KONTAKT ------------------------- -->
@@ -242,19 +364,18 @@
 					</span>
 					<ul class="offer-list">
 						<li class="offer-list__item">
-							<!-- <iframe
+							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.4566816893857!2d14.556468591876232!3d53.42454234638755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090e51ad568d%3A0xd1ba4155a6db895f!2sZamek%20Ksi%C4%85%C5%BC%C4%85t%20Pomorskich%20w%20Szczecinie!5e0!3m2!1sen!2spl!4v1589805547779!5m2!1sen!2spl"
-								frameborder="0"
 								allowfullscreen=""
 								aria-hidden="false"
 								tabindex="0"
 								class="google-map"
-							></iframe> -->
+							></iframe>
 						</li>
 					</ul>
 				</article>
 
-				<a href="#about" class="move-wrapper"></a>
+				<a href="#about" class="move-wrapper smooth-scroll"></a>
 			</section>
 
 			<!-- -------------------------- SEKCJA O NAS ------------------------- -->

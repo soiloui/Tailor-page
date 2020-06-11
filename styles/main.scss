@@ -16,6 +16,7 @@
 
 // _______ Primary button ________
 .button-primary {
+	position: relative;
 	display: block;
 	margin: 2em 0;
 	padding: 1em;
@@ -26,6 +27,30 @@
 	text-transform: uppercase;
 	background-color: $col-acc;
 	border-radius: 5px;
+	cursor: pointer;
+	user-select: none;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+
+		transition: transform 0.5s cubic-bezier(0.19, 1.36, 0.75, -0.72);
+		transform: translateX(-100%);
+
+		background: rgba(#fff, 0.3);
+		border-radius: inherit;
+	}
+
+	&:hover {
+		&::before {
+			transform: translateX(0);
+		}
+	}
 }
 header .button-primary {
 	margin-top: 2em;
@@ -270,6 +295,11 @@ h1 {
 
 	text-align: center;
 	border: 1px solid $col-sec-lt;
+	transition: border 0.25s ease-in;
+
+	&:hover {
+		border: 1px solid $col-acc;
+	}
 }
 .offer-article__title {
 	padding: 0.5em;
@@ -309,6 +339,54 @@ h1 {
 
 	&--express {
 		color: $col-acc;
+	}
+}
+
+// _______ Pricing ________
+.pricing {
+	width: 100%;
+	min-height: 0;
+	max-height: 1px;
+	padding: 0.1em;
+	opacity: 0;
+
+	transform: translateX(120%);
+	transition: transform 0.5s ease-out, max-height 5.5s ease-out, opacity 0.5s ease-out;
+}
+.pricing--active {
+	transform: translateY(0);
+	max-height: fit-content;
+	opacity: 1;
+}
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 1em;
+	text-align: center;
+	text-transform: capitalize;
+}
+th {
+	padding: 1em 0;
+}
+tr {
+	border-bottom: 2px solid $col-acc;
+}
+
+.table-title {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+tbody > :nth-child(1) {
+	background: $col-acc;
+	color: $col-prim-dk;
+	font-size: 1.2rem;
+
+	td {
+		padding: 0.4em;
 	}
 }
 
@@ -383,4 +461,5 @@ footer {
 	background-color: $col-prim-dk;
 }
 
+@import 'gallery';
 @import 'responsive';

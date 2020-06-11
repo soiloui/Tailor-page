@@ -19,412 +19,414 @@
 		<link rel="manifest" href="./resources/favico/site.webmanifest" />
 	</head>
 	<body>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">
-				You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your
-				experience.
-			</p>
-		<![endif]-->
+		<div class="site-wrapper">
+			<!--[if lt IE 7]>
+				<p class="browsehappy">
+					You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve
+					your experience.
+				</p>
+			<![endif]-->
 
-		<!-- -------------------------- NAWIGACJA------------------------- -->
-		<div class="menu-btn">
-			<div class="hamburger"></div>
-		</div>
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__element">
-					<a href="#header" class="nav__link smooth-scroll"> Strona główna</a>
-				</li>
-
-				<li class="nav__element">
-					<a href="#offer" class="nav__link smooth-scroll"> Oferta</a>
-				</li>
-
-				<li class="nav__element">
-					<a href="#portfolio" class="nav__link smooth-scroll">Portfolio</a>
-				</li>
-
-				<li class="nav__element">
-					<a href="#contact" class="nav__link smooth-scroll">Kontakt</a>
-				</li>
-
-				<li class="nav__element">
-					<a href="#about" class="nav__link smooth-scroll">O nas</a>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- -------------------------- HEADER ------------------------- -->
-		<header id="header">
-			<h1>Twój krawiec <br /><span> wszystko uszyte na miarę</span></h1>
-			<div class="img-wrapper">
-				<img
-					src="./resources/images/tools_2000w.jpg"
-					alt="narzędzia do szycia - nożyczki, nici, metr"
-					srcset="
-						./resources/images/tools_600w.jpg   600w,
-						./resources/images/tools_1000w.jpg 1000w,
-						./resources/images/tools_2000w.jpg 2000w,
-						./resources/images/tools_4000w.jpg 4000w
-					"
-					sizes="100vw"
-					class="bg-img"
-				/>
+			<!-- -------------------------- NAWIGACJA------------------------- -->
+			<div class="menu-btn">
+				<div class="hamburger"></div>
 			</div>
-			<a href="#contact" class="button-primary smooth-scroll">złóż zamówienie</a>
-			<a href="#offer" class="move-wrapper smooth-scroll"></a>
-		</header>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__element">
+						<a href="#header" class="nav__link smooth-scroll"> Strona główna</a>
+					</li>
 
-		<main>
-			<!-- -------------------------- SEKCJA OFERTA ------------------------- -->
-			<section class="section section--dark" id="offer">
-				<h2 class="section__title">oferta</h2>
-				<img
-					src="./resources/illustrations/window_shopping.svg"
-					alt="ilustracja człowieka oglądającego witrynę sklepu odzieżowego"
-					class="section__illustration"
-				/>
+					<li class="nav__element">
+						<a href="#offer" class="nav__link smooth-scroll"> Oferta</a>
+					</li>
 
-				<div class="boxes-wrapper">
-					<article class="offer-article">
-						<h3 class="offer-article__title">szycie miarowe odzieży damskiej</h3>
-						<span class="material-icons">
-							check_circle
-						</span>
-						<ul class="offer-list">
-							<li class="offer-list__item">bluzki</li>
-							<li class="offer-list__item">suknie</li>
-							<li class="offer-list__item">spodnie</li>
-							<li class="offer-list__item">tuniki</li>
-							<li class="offer-list__item">żakiety</li>
-						</ul>
-					</article>
-					<article class="offer-article">
-						<h3 class="offer-article__title">szycie miarowe odzieży męskiej</h3>
-						<span class="material-icons">
-							check_circle
-						</span>
-						<ul class="offer-list">
-							<li class="offer-list__item">garnitury</li>
-							<li class="offer-list__item">koszule</li>
-							<li class="offer-list__item">spodnie</li>
-						</ul>
-					</article>
-					<article class="offer-article">
-						<h3 class="offer-article__title">​​poprawki krawieckie</h3>
-						<span class="material-icons">
-							check_circle
-						</span>
-						<ul class="offer-list">
-							<li class="offer-list__item">skracanie/wydłużanie</li>
-							<li class="offer-list__item">zwężanie/poszerzanie</li>
-							<li class="offer-list__item">przeszywanie</li>
-							<li class="offer-list__item">naprawa odzieży</li>
-							<li class="offer-list__item">wymiana zamków</li>
-						</ul>
-					</article>
+					<li class="nav__element">
+						<a href="#portfolio" class="nav__link smooth-scroll">Portfolio</a>
+					</li>
 
-					<article class="offer-article offer-article--priority">
-						<h3 class="offer-article__title">​​wybór priorytetu</h3>
-						<span class="material-icons">
-							hourglass_full
-						</span>
-						<ul class="offer-list offer-list--priority">
-							<li class="offer-list__item">
-								standard <span><br />do 7 dni</span>
-							</li>
-							<li class="offer-list__item offer-list__item--express">
-								ekspres <span><br />do 2 dni</span>
-							</li>
-						</ul>
-					</article>
-				</div>
+					<li class="nav__element">
+						<a href="#contact" class="nav__link smooth-scroll">Kontakt</a>
+					</li>
 
-				<p class="button-primary pricing-button">cennik</p>
+					<li class="nav__element">
+						<a href="#about" class="nav__link smooth-scroll">O nas</a>
+					</li>
+				</ul>
+			</nav>
 
-				<section class="section section--dark pricing" id="pricing">
-					<h2 class="section__title">cennik</h2>
-					<div class="boxes-wrapper">
-						<table>
-							<thead>
-								<tr>
-									<th colspan="10" class="table-title">szycie miarowe odzieży damskiej</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>-</td>
-									<td>S</td>
-									<td>M</td>
-									<td>L</td>
-									<td>XL</td>
-								</tr>
-
-								<tr>
-									<td>Bluzki</td>
-									<td>20 - 30zł</td>
-									<td>30 - 60zł</td>
-									<td>50 - 90zł</td>
-									<td>80 - 150zł</td>
-								</tr>
-
-								<tr>
-									<td>Suknie</td>
-									<td>20 - 30zł</td>
-									<td>30 - 60zł</td>
-									<td>50 - 90zł</td>
-									<td>80 - 150zł</td>
-								</tr>
-
-								<tr>
-									<td>Spodnie</td>
-									<td>20 - 30zł</td>
-									<td>30 - 60zł</td>
-									<td>50 - 90zł</td>
-									<td>80 - 150zł</td>
-								</tr>
-
-								<tr>
-									<td>Tuniki</td>
-									<td>20 - 30zł</td>
-									<td>30 - 60zł</td>
-									<td>50 - 90zł</td>
-									<td>80 - 150zł</td>
-								</tr>
-
-								<tr>
-									<td>żakiety</td>
-									<td>20 - 30zł</td>
-									<td>30 - 60zł</td>
-									<td>50 - 90zł</td>
-									<td>80 - 150zł</td>
-								</tr>
-							</tbody>
-						</table>
-
-						<table>
-							<thead>
-								<tr>
-									<th colspan="10" class="table-title">szycie miarowe odzieży męskiej</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>-</td>
-									<td>S</td>
-									<td>M</td>
-									<td>L</td>
-									<td>XL</td>
-								</tr>
-
-								<tr>
-									<td>garnitury</td>
-									<td>70 - 150zł</td>
-									<td>100 - 350zł</td>
-									<td>150 - 450zł</td>
-									<td>200 - 600zł</td>
-								</tr>
-
-								<tr>
-									<td>koszule</td>
-									<td>20 - 90zł</td>
-									<td>30 - 100zł</td>
-									<td>40 - 150zł</td>
-									<td>50 - 190zł</td>
-								</tr>
-
-								<tr>
-									<td>spodnie</td>
-									<td>20 - 40zł</td>
-									<td>30 - 80zł</td>
-									<td>50 - 130zł</td>
-									<td>80 - 170zł</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-
-				<a href="#portfolio" class="move-wrapper smooth-scroll"></a>
-			</section>
-
-			<!-- -------------------------- SEKCJA PORTFOLIO ------------------------- -->
-			<section class="section section--light" id="portfolio">
-				<h2 class="section__title">portfolio</h2>
-				<div class="boxes-wrapper">
-					<div class="portfolio-item">
-						<img
-							src="./resources/images/gallery/woman_1_2000w.jpg"
-							alt="kobieta w sukni"
-							srcset="
-								./resources/images/gallery/woman_1_600w.jpg   600w,
-								./resources/images/gallery/woman_1_1000w.jpg 1000w,
-								./resources/images/gallery/woman_1_2000w.jpg 2000w
-							"
-							sizes="(max-width: 800px) 98vw, 45vw"
-							class="portfolio-item__img"
-						/>
-					</div>
-					<div class="portfolio-item">
-						<img
-							src="./resources/images/gallery/men_1_1700w.jpg"
-							alt="Mężczyzna w dżinsowej kurtce"
-							srcset="
-								./resources/images/gallery/men_1_600w.jpg   600w,
-								./resources/images/gallery/men_1_1000w.jpg 1000w,
-								./resources/images/gallery/men_1_1700w.jpg 1700w
-							"
-							sizes="(max-width: 800px) 98vw, 45vw"
-							class="portfolio-item__img"
-						/>
-					</div>
-					<div class="portfolio-item">
-						<img
-							src="./resources/images/gallery/woman_2_2000w.jpg"
-							alt="kobieta w sukni"
-							srcset="
-								./resources/images/gallery/woman_2_600w.jpg   600w,
-								./resources/images/gallery/woman_2_1000w.jpg 1000w,
-								./resources/images/gallery/woman_2_2000w.jpg 2000w
-							"
-							sizes="(max-width: 800px) 98vw, 45vw"
-							class="portfolio-item__img"
-						/>
-					</div>
-					<div class="portfolio-item">
-						<img
-							src="./resources/images/gallery/men_2_2000w.jpg"
-							alt="Mężczyzna siedzący w kremoweym płaszczu"
-							srcset="
-								./resources/images/gallery/men_2_600w.jpg   600w,
-								./resources/images/gallery/men_2_1000w.jpg 1000w,
-								./resources/images/gallery/men_2_2000w.jpg 2000w
-							"
-							sizes="(max-width: 800px) 98vw, 45vw"
-							class="portfolio-item__img"
-						/>
-					</div>
-				</div>
-
-				<p class="button-primary gallery-button">zobacz więcej</p>
-
-				<!-- ------------------ GALLERY ----------------------- -->
-
-				<div class="gallery">
-					<div class="gallery__content">
-						<span class="material-icons close">
-							close
-						</span>
-						<span class="material-icons left">
-							arrow_left
-						</span>
-						<span class="material-icons right">
-							arrow_right
-						</span>
-					</div>
-				</div>
-
-				<a href="#contact" class="move-wrapper smooth-scroll"></a>
-			</section>
-
-			<!-- -------------------------- SEKCJA KONTAKT ------------------------- -->
-			<section class="section section--dark" id="contact">
-				<h2 class="section__title">kontakt</h2>
-				<img
-					src="./resources/illustrations/posters_shopping.svg"
-					alt="ilustracja człowieka oglądającego witrynę sklepu odzieżowego"
-					class="section__illustration"
-				/>
-
-				<div class="boxes-wrapper">
-					<article class="offer-article">
-						<h3 class="offer-article__title offer-article__title--contact">zadzwoń</h3>
-						<span class="material-icons">
-							call
-						</span>
-						<ul class="offer-list">
-							<li class="offer-list__item">+48 034 304 034</li>
-						</ul>
-					</article>
-					<article class="offer-article">
-						<h3 class="offer-article__title offer-article__title--contact">napisz</h3>
-						<span class="material-icons">
-							email
-						</span>
-						<ul class="offer-list">
-							<li class="offer-list__item">twojkrawiec@gmail.com</li>
-						</ul>
-					</article>
-				</div>
-
-				<article class="offer-article offer-article--map">
-					<h3 class="offer-article__title offer-article__title--contact">przyjedź</h3>
-					<span class="material-icons">
-						location_on
-					</span>
-					<ul class="offer-list">
-						<li class="offer-list__item">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.4566816893857!2d14.556468591876232!3d53.42454234638755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090e51ad568d%3A0xd1ba4155a6db895f!2sZamek%20Ksi%C4%85%C5%BC%C4%85t%20Pomorskich%20w%20Szczecinie!5e0!3m2!1sen!2spl!4v1589805547779!5m2!1sen!2spl"
-								allowfullscreen=""
-								aria-hidden="false"
-								tabindex="0"
-								class="google-map"
-							></iframe>
-						</li>
-					</ul>
-				</article>
-
-				<a href="#about" class="move-wrapper smooth-scroll"></a>
-			</section>
-
-			<!-- -------------------------- SEKCJA O NAS ------------------------- -->
-			<section class="section section--light" id="about">
-				<h2 class="section__title">o nas</h2>
+			<!-- -------------------------- HEADER ------------------------- -->
+			<header id="header">
+				<h1>Twój krawiec <br /><span> wszystko uszyte na miarę</span></h1>
 				<div class="img-wrapper">
 					<img
-						src="./resources/images/flat_2000w.jpg"
+						src="./resources/images/tools_2000w.jpg"
 						alt="narzędzia do szycia - nożyczki, nici, metr"
 						srcset="
-							./resources/images/flat_600w.jpg   600w,
-							./resources/images/flat_1000w.jpg 1000w,
-							./resources/images/flat_2000w.jpg 2000w,
-							./resources/images/flat_4000w.jpg 4000w
+							./resources/images/tools_600w.jpg   600w,
+							./resources/images/tools_1000w.jpg 1000w,
+							./resources/images/tools_2000w.jpg 2000w,
+							./resources/images/tools_4000w.jpg 4000w
 						"
 						sizes="100vw"
 						class="bg-img"
 					/>
 				</div>
+				<a href="#contact" class="button-primary smooth-scroll">złóż zamówienie</a>
+				<a href="#offer" class="move-wrapper smooth-scroll"></a>
+			</header>
 
-				<div class="boxes-wrapper">
-					<p class="about-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique, magnam minima veniam hic eligendi,
-						eveniet rerum quos harum eius eum cum quia culpa, obcaecati maiores. Nihil quas quaerat nulla illo veritatis
-						in tenetur, reprehenderit facilis doloribus reiciendis inventore minus? Inventore maxime corrupti quis
-						sequi, obcaecati necessitatibus illum laudantium reiciendis!
-					</p>
-					<p class="about-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus accusamus inventore iste, in incidunt
-						blanditiis adipisci ratione nihil excepturi, sequi facere laudantium temporibus minus, error natus quod
-						debitis ullam quam. Mollitia ducimus quisquam, amet maxime consequatur ipsum eos cum, nulla quibusdam
-						maiores incidunt distinctio numquam magni nostrum harum voluptate sunt fuga enim aspernatur reiciendis ea
-						eligendi voluptatum tempore? Nisi quibusdam minus tempore eveniet praesentium porro facilis voluptas nostrum
-						quis, vero ut sed nihil ad! Amet, fuga quae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
-						quod esse.
-					</p>
-					<p class="about-text">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum laboriosam officia architecto
-						quidem dicta vel praesentium vitae laborum, molestias commodi quasi ea tempora cum repellat! Dolores facilis
-						facere recusandae minus possimus enim, repudiandae, ex, architecto rerum laboriosam quas cum.
-					</p>
-				</div>
-			</section>
-		</main>
+			<main>
+				<!-- -------------------------- SEKCJA OFERTA ------------------------- -->
+				<section class="section section--dark" id="offer">
+					<h2 class="section__title">oferta</h2>
+					<img
+						src="./resources/illustrations/window_shopping.svg"
+						alt="ilustracja człowieka oglądającego witrynę sklepu odzieżowego"
+						class="section__illustration"
+					/>
 
-		<footer>
-			<p>Mieczysław Palian 2020</p>
-		</footer>
+					<div class="boxes-wrapper">
+						<article class="offer-article">
+							<h3 class="offer-article__title">szycie miarowe odzieży damskiej</h3>
+							<span class="material-icons">
+								check_circle
+							</span>
+							<ul class="offer-list">
+								<li class="offer-list__item">bluzki</li>
+								<li class="offer-list__item">suknie</li>
+								<li class="offer-list__item">spodnie</li>
+								<li class="offer-list__item">tuniki</li>
+								<li class="offer-list__item">żakiety</li>
+							</ul>
+						</article>
+						<article class="offer-article">
+							<h3 class="offer-article__title">szycie miarowe odzieży męskiej</h3>
+							<span class="material-icons">
+								check_circle
+							</span>
+							<ul class="offer-list">
+								<li class="offer-list__item">garnitury</li>
+								<li class="offer-list__item">koszule</li>
+								<li class="offer-list__item">spodnie</li>
+							</ul>
+						</article>
+						<article class="offer-article">
+							<h3 class="offer-article__title">​​poprawki krawieckie</h3>
+							<span class="material-icons">
+								check_circle
+							</span>
+							<ul class="offer-list">
+								<li class="offer-list__item">skracanie/wydłużanie</li>
+								<li class="offer-list__item">zwężanie/poszerzanie</li>
+								<li class="offer-list__item">przeszywanie</li>
+								<li class="offer-list__item">naprawa odzieży</li>
+								<li class="offer-list__item">wymiana zamków</li>
+							</ul>
+						</article>
 
-		<script src="./main.js" async defer></script>
+						<article class="offer-article offer-article--priority">
+							<h3 class="offer-article__title">​​wybór priorytetu</h3>
+							<span class="material-icons">
+								hourglass_full
+							</span>
+							<ul class="offer-list offer-list--priority">
+								<li class="offer-list__item">
+									standard <span><br />do 7 dni</span>
+								</li>
+								<li class="offer-list__item offer-list__item--express">
+									ekspres <span><br />do 2 dni</span>
+								</li>
+							</ul>
+						</article>
+					</div>
+
+					<p class="button-primary pricing-button">cennik</p>
+
+					<section class="section section--dark pricing" id="pricing">
+						<h2 class="section__title">cennik</h2>
+						<div class="boxes-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="10" class="table-title">szycie miarowe odzieży damskiej</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>-</td>
+										<td>S</td>
+										<td>M</td>
+										<td>L</td>
+										<td>XL</td>
+									</tr>
+
+									<tr>
+										<td>Bluzki</td>
+										<td>20 - 30zł</td>
+										<td>30 - 60zł</td>
+										<td>50 - 90zł</td>
+										<td>80 - 150zł</td>
+									</tr>
+
+									<tr>
+										<td>Suknie</td>
+										<td>20 - 30zł</td>
+										<td>30 - 60zł</td>
+										<td>50 - 90zł</td>
+										<td>80 - 150zł</td>
+									</tr>
+
+									<tr>
+										<td>Spodnie</td>
+										<td>20 - 30zł</td>
+										<td>30 - 60zł</td>
+										<td>50 - 90zł</td>
+										<td>80 - 150zł</td>
+									</tr>
+
+									<tr>
+										<td>Tuniki</td>
+										<td>20 - 30zł</td>
+										<td>30 - 60zł</td>
+										<td>50 - 90zł</td>
+										<td>80 - 150zł</td>
+									</tr>
+
+									<tr>
+										<td>żakiety</td>
+										<td>20 - 30zł</td>
+										<td>30 - 60zł</td>
+										<td>50 - 90zł</td>
+										<td>80 - 150zł</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table>
+								<thead>
+									<tr>
+										<th colspan="10" class="table-title">szycie miarowe odzieży męskiej</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>-</td>
+										<td>S</td>
+										<td>M</td>
+										<td>L</td>
+										<td>XL</td>
+									</tr>
+
+									<tr>
+										<td>garnitury</td>
+										<td>70 - 150zł</td>
+										<td>100 - 350zł</td>
+										<td>150 - 450zł</td>
+										<td>200 - 600zł</td>
+									</tr>
+
+									<tr>
+										<td>koszule</td>
+										<td>20 - 90zł</td>
+										<td>30 - 100zł</td>
+										<td>40 - 150zł</td>
+										<td>50 - 190zł</td>
+									</tr>
+
+									<tr>
+										<td>spodnie</td>
+										<td>20 - 40zł</td>
+										<td>30 - 80zł</td>
+										<td>50 - 130zł</td>
+										<td>80 - 170zł</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<a href="#portfolio" class="move-wrapper smooth-scroll"></a>
+				</section>
+
+				<!-- -------------------------- SEKCJA PORTFOLIO ------------------------- -->
+				<section class="section section--light" id="portfolio">
+					<h2 class="section__title">portfolio</h2>
+					<div class="boxes-wrapper">
+						<div class="portfolio-item">
+							<img
+								src="./resources/images/gallery/woman_1_2000w.jpg"
+								alt="kobieta w sukni"
+								srcset="
+									./resources/images/gallery/woman_1_600w.jpg   600w,
+									./resources/images/gallery/woman_1_1000w.jpg 1000w,
+									./resources/images/gallery/woman_1_2000w.jpg 2000w
+								"
+								sizes="(max-width: 800px) 98vw, 45vw"
+								class="portfolio-item__img"
+							/>
+						</div>
+						<div class="portfolio-item">
+							<img
+								src="./resources/images/gallery/men_1_2000w.jpg"
+								alt="Mężczyzna w dżinsowej kurtce"
+								srcset="
+									./resources/images/gallery/men_1_600w.jpg   600w,
+									./resources/images/gallery/men_1_1000w.jpg 1000w,
+									./resources/images/gallery/men_1_2000w.jpg 1700w
+								"
+								sizes="(max-width: 800px) 98vw, 45vw"
+								class="portfolio-item__img"
+							/>
+						</div>
+						<div class="portfolio-item">
+							<img
+								src="./resources/images/gallery/woman_2_2000w.jpg"
+								alt="kobieta w sukni"
+								srcset="
+									./resources/images/gallery/woman_2_600w.jpg   600w,
+									./resources/images/gallery/woman_2_1000w.jpg 1000w,
+									./resources/images/gallery/woman_2_2000w.jpg 2000w
+								"
+								sizes="(max-width: 800px) 98vw, 45vw"
+								class="portfolio-item__img"
+							/>
+						</div>
+						<div class="portfolio-item">
+							<img
+								src="./resources/images/gallery/men_2_2000w.jpg"
+								alt="Mężczyzna siedzący w kremoweym płaszczu"
+								srcset="
+									./resources/images/gallery/men_2_600w.jpg   600w,
+									./resources/images/gallery/men_2_1000w.jpg 1000w,
+									./resources/images/gallery/men_2_2000w.jpg 2000w
+								"
+								sizes="(max-width: 800px) 98vw, 45vw"
+								class="portfolio-item__img"
+							/>
+						</div>
+					</div>
+
+					<p class="button-primary gallery-button">zobacz więcej</p>
+
+					<!-- ------------------ GALLERY ----------------------- -->
+
+					<div class="gallery">
+						<div class="gallery__content">
+							<span class="material-icons close">
+								close
+							</span>
+							<span class="material-icons left">
+								arrow_left
+							</span>
+							<span class="material-icons right">
+								arrow_right
+							</span>
+						</div>
+					</div>
+
+					<a href="#contact" class="move-wrapper smooth-scroll"></a>
+				</section>
+
+				<!-- -------------------------- SEKCJA KONTAKT ------------------------- -->
+				<section class="section section--dark" id="contact">
+					<h2 class="section__title">kontakt</h2>
+					<img
+						src="./resources/illustrations/posters_shopping.svg"
+						alt="ilustracja człowieka oglądającego witrynę sklepu odzieżowego"
+						class="section__illustration"
+					/>
+
+					<div class="boxes-wrapper">
+						<article class="offer-article">
+							<h3 class="offer-article__title offer-article__title--contact">zadzwoń</h3>
+							<span class="material-icons">
+								call
+							</span>
+							<ul class="offer-list">
+								<li class="offer-list__item">+48 034 304 034</li>
+							</ul>
+						</article>
+						<article class="offer-article">
+							<h3 class="offer-article__title offer-article__title--contact">napisz</h3>
+							<span class="material-icons">
+								email
+							</span>
+							<ul class="offer-list">
+								<li class="offer-list__item">twojkrawiec@gmail.com</li>
+							</ul>
+						</article>
+					</div>
+
+					<article class="offer-article offer-article--map">
+						<h3 class="offer-article__title offer-article__title--contact">przyjedź</h3>
+						<span class="material-icons">
+							location_on
+						</span>
+						<ul class="offer-list">
+							<li class="offer-list__item">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.4566816893857!2d14.556468591876232!3d53.42454234638755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa090e51ad568d%3A0xd1ba4155a6db895f!2sZamek%20Ksi%C4%85%C5%BC%C4%85t%20Pomorskich%20w%20Szczecinie!5e0!3m2!1sen!2spl!4v1589805547779!5m2!1sen!2spl"
+									allowfullscreen=""
+									aria-hidden="false"
+									tabindex="0"
+									class="google-map"
+								></iframe>
+							</li>
+						</ul>
+					</article>
+
+					<a href="#about" class="move-wrapper smooth-scroll"></a>
+				</section>
+
+				<!-- -------------------------- SEKCJA O NAS ------------------------- -->
+				<section class="section section--light" id="about">
+					<h2 class="section__title">o nas</h2>
+					<div class="img-wrapper">
+						<img
+							src="./resources/images/flat_2000w.jpg"
+							alt="narzędzia do szycia - nożyczki, nici, metr"
+							srcset="
+								./resources/images/flat_600w.jpg   600w,
+								./resources/images/flat_1000w.jpg 1000w,
+								./resources/images/flat_2000w.jpg 2000w,
+								./resources/images/flat_4000w.jpg 4000w
+							"
+							sizes="100vw"
+							class="bg-img"
+						/>
+					</div>
+
+					<div class="boxes-wrapper">
+						<p class="about-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique, magnam minima veniam hic
+							eligendi, eveniet rerum quos harum eius eum cum quia culpa, obcaecati maiores. Nihil quas quaerat nulla
+							illo veritatis in tenetur, reprehenderit facilis doloribus reiciendis inventore minus? Inventore maxime
+							corrupti quis sequi, obcaecati necessitatibus illum laudantium reiciendis!
+						</p>
+						<p class="about-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus accusamus inventore iste, in incidunt
+							blanditiis adipisci ratione nihil excepturi, sequi facere laudantium temporibus minus, error natus quod
+							debitis ullam quam. Mollitia ducimus quisquam, amet maxime consequatur ipsum eos cum, nulla quibusdam
+							maiores incidunt distinctio numquam magni nostrum harum voluptate sunt fuga enim aspernatur reiciendis ea
+							eligendi voluptatum tempore? Nisi quibusdam minus tempore eveniet praesentium porro facilis voluptas
+							nostrum quis, vero ut sed nihil ad! Amet, fuga quae? Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Nisi, quod esse.
+						</p>
+						<p class="about-text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum laboriosam officia architecto
+							quidem dicta vel praesentium vitae laborum, molestias commodi quasi ea tempora cum repellat! Dolores
+							facilis facere recusandae minus possimus enim, repudiandae, ex, architecto rerum laboriosam quas cum.
+						</p>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<p>Mieczysław Palian 2020</p>
+			</footer>
+
+			<script src="./main.js" async defer></script>
+		</div>
 	</body>
 </html>

@@ -60,14 +60,14 @@ header .button-primary {
 // _______ Move arrows ________
 .move-wrapper {
 	position: sticky;
-	left: 50%;
 	bottom: 15px;
-	margin: 1.7em 0;
+	left: 50%;
+	margin: 1.7em auto;
 	margin-bottom: 0.6em;
 	width: 30px;
 	height: 25px;
-
 	transform: translateX(-50%);
+
 	cursor: pointer;
 
 	&::before {

@@ -11,6 +11,9 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+
+.site-wrapper {
   overflow-x: hidden;
 }
 
@@ -102,9 +105,9 @@ header .button-primary {
 .move-wrapper {
   position: -webkit-sticky;
   position: sticky;
-  left: 50%;
   bottom: 15px;
-  margin: 1.7em 0;
+  left: 50%;
+  margin: 1.7em auto;
   margin-bottom: 0.6em;
   width: 30px;
   height: 25px;

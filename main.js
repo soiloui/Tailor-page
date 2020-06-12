@@ -45,11 +45,13 @@ elementsScroll_DOM.forEach((element) => {
 });
 
 //PRICING
-const pricing_BTN = document.querySelector('.pricing-button');
+const pricing_BTN = document.querySelectorAll('.pricing-button');
 const pricing_DOM = document.querySelector('.pricing');
 
-pricing_BTN.addEventListener('click', () => {
-	pricing_DOM.classList.toggle('pricing--active');
+pricing_BTN.forEach((button) => {
+	button.addEventListener('click', () => {
+		pricing_DOM.classList.toggle('pricing--active');
+	});
 });
 
 // GALLERY

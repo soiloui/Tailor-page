@@ -37,11 +37,15 @@ function smoothScroll(target, duration) {
 const elementsScroll_DOM = document.querySelectorAll('.smooth-scroll');
 
 elementsScroll_DOM.forEach((element) => {
-	element.addEventListener('click', function () {
-		const linkDestiny = element.getAttribute('href');
-		const linkElement = document.querySelector(`${linkDestiny}`);
-		smoothScroll(linkElement, 800);
-	});
+	element.addEventListener(
+		'click',
+		function () {
+			const linkDestiny = element.getAttribute('href');
+			const linkElement = document.querySelector(`${linkDestiny}`);
+			smoothScroll(linkElement, 800);
+		},
+		{ passive: true }
+	);
 });
 
 //PRICING

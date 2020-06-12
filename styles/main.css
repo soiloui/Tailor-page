@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -18,7 +18,7 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: "Cardo", serif;
+  font-family: "Cardo", Times, serif;
   font-weight: 400;
 }
 
@@ -359,7 +359,7 @@ h1 span {
 .section__title {
   padding: 0.8em;
   font-size: 2.5rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   text-align: center;
   text-transform: capitalize;
 }

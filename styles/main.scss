@@ -349,6 +349,7 @@ h1 {
 	max-height: 1px;
 	padding: 0.1em;
 	opacity: 0;
+	overflow: hidden;
 
 	transform: translateX(-120%);
 	transition: transform 0.5s ease-out, max-height 5.5s ease-out, opacity 0.5s ease-out;
@@ -360,6 +361,7 @@ h1 {
 }
 table {
 	border-collapse: collapse;
+	font-size: 0.6rem;
 }
 
 th,
@@ -377,13 +379,11 @@ tr {
 
 .table-title {
 	text-transform: uppercase;
-	font-size: 1.2rem;
 }
 
 tbody > :nth-child(1) {
 	background: $col-acc;
 	color: $col-prim-dk;
-	font-size: 1.2rem;
 
 	td {
 		padding: 0.4em;

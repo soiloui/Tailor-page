@@ -449,6 +449,7 @@ h1 span {
   max-height: 1px;
   padding: 0.1em;
   opacity: 0;
+  overflow: hidden;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
   -webkit-transition: max-height 5.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
@@ -468,6 +469,7 @@ h1 span {
 
 table {
   border-collapse: collapse;
+  font-size: 0.6rem;
 }
 
 th,
@@ -487,13 +489,11 @@ tr {
 
 .table-title {
   text-transform: uppercase;
-  font-size: 1.2rem;
 }
 
 tbody > :nth-child(1) {
   background: #e84855;
   color: #0d1321;
-  font-size: 1.2rem;
 }
 
 tbody > :nth-child(1) td {
@@ -675,6 +675,9 @@ footer {
   html {
     font-size: 16px;
   }
+  table {
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 700px) {
@@ -703,6 +706,9 @@ footer {
             flex-grow: 1;
     margin: 0.7em;
     width: 40%;
+  }
+  table {
+    font-size: 1rem;
   }
 }
 

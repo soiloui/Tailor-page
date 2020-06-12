@@ -50,7 +50,11 @@ const pricing_DOM = document.querySelector('.pricing');
 
 pricing_BTN.forEach((button) => {
 	button.addEventListener('click', () => {
-		pricing_DOM.classList.toggle('pricing--active');
+		if (button.classList.contains('nav__link') && !button.classList.contains('pricing--active')) {
+			pricing_DOM.classList.add('pricing--active');
+		} else {
+			pricing_DOM.classList.toggle('pricing--active');
+		}
 	});
 });
 

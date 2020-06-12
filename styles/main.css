@@ -13,10 +13,6 @@ body {
   font-weight: 400;
 }
 
-.site-wrapper {
-  overflow-x: hidden;
-}
-
 h1,
 h2,
 h4,
@@ -107,7 +103,7 @@ header .button-primary {
   position: sticky;
   bottom: 15px;
   left: 50%;
-  margin: 1.7em auto;
+  margin: 1.7em 0;
   margin-bottom: 0.6em;
   width: 30px;
   height: 25px;
@@ -453,8 +449,8 @@ h1 span {
   max-height: 1px;
   padding: 0.1em;
   opacity: 0;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   -webkit-transition: max-height 5.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
   transition: max-height 5.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out, max-height 5.5s ease-out, opacity 0.5s ease-out;
